@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+        
+        <script type="text/javascript" >
+            function anade() {
+                var elemento = document.createElement("li");
+                var texto = document.createTextNode("Elemento de prueba");
+                
+                elemento.appendChild(texto);
+                
+                var lista = document.getElementById("lista");
+                lista.appendChild(elemento);
+                
+                var nuevoElemento   = "<li>Texto de prueba</li>";
+                lista.innerHTML = lista.innerHTML + nuevoElemento;
+            }
+        </script>
+    </head>
+    <body>
+        <lu id="lista">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetuer adipiscing elit</li>
+            <li>Sed mattis enim vitae orci</li>
+            <li>Phasellus libero</li>
+            <li>Maecenas nisl arcu</li>
+        </lu>
+        
+        <input type="button" value="Añadir elemento" onclick="anade();">
+    </body>
+</html>

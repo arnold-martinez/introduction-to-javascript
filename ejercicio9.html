@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+        
+        <script type="text/javascript" >
+            function info(cadena) {
+                var resultado = "La cadena \"" + cadena + "\" ";
+                
+                // Comprobar mayúsculas y minúsculas
+                if (cadena == cadena.toUpperCase()) {
+                    resultado += " está formada sólo por mayúsculas";
+                } else if (cadena == cadena.toLocaleLowerCase()) {
+                    resultado += " está formada por mayúsculas y minúsculas";
+                } else {
+                    resultado += " está formada por mayúsculas y minúsculas";
+                }
+                
+                return resultado;
+            }
+            
+            alert(info("OVNI = OBJETO VOLADOR NO IDENTIFICADO"));
+            alert("En un lugar de la mancha...");
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
